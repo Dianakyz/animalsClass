@@ -2,8 +2,8 @@ import java.util.Objects;
 
 public class FlyBird extends Bird {
 
-    protected final String fly;
-    protected FlyBird(String name, int age, String habitat, String fly) {
+    private final String fly;
+    public FlyBird(String name, int age, String habitat, String fly) {
         super(name, age, habitat);
         this.fly = ValidationUtils.validOrDefault(fly, "Летает");
     }

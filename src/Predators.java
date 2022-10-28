@@ -32,7 +32,7 @@ public class Predators extends Mammals{
 
     public String toString() {
         return "Класс: Млекапотиющие. Хищное животное.Название животного: " + getName() + ". Возраст животного: " + getAge() +
-                " лет. Ареал обитания: " + habitat +
-                ". Скорость перемещения: " + speed + " км/ч. Тип пищи: " + food + ".";
+                " лет. Ареал обитания: " + getHabitat() +
+                ". Скорость перемещения: " + getSpeed() + " км/ч. Тип пищи: " + food + ".";
     }
 }

@@ -2,9 +2,9 @@ import java.util.Objects;
 
 public class NonFlyBird extends Bird {
 
-    protected final String fly;
+    private final String fly;
 
-    protected NonFlyBird(String name, int age, String habitat, String fly) {
+    public NonFlyBird(String name, int age, String habitat, String fly) {
         super(name, age, habitat);
         this.fly = ValidationUtils.validOrDefault(fly, "Не летает. Только ходит.");
     }

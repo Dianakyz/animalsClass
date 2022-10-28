@@ -2,9 +2,9 @@ import java.util.Objects;
 
 public class Amphibians extends Animals{
 
-    public String habitat;
+    private String habitat;
 
-    protected Amphibians(String name, int age, String habitat) {
+    public Amphibians(String name, int age, String habitat) {
         super(name, age);
         setHabitat(habitat);
     }
