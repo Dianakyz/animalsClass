@@ -1,9 +1,9 @@
 public abstract class Mammals extends Animals {
 
-    public String habitat;
-    public int speed;
+    private String habitat;
+    private int speed;
 
-    protected Mammals(String name, int age, String habitat, int speed) {
+    public Mammals(String name, int age, String habitat, int speed) {
         super(name, age);
         setHabitat(habitat);
         setSpeed(speed);

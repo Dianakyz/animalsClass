@@ -2,9 +2,9 @@ import java.util.Objects;
 
 public class Herbivores extends Mammals{
 
-    protected final String food;
+    private final String food;
 
-    protected Herbivores(String name, int age, String habitat, int speed, String food) {
+    public Herbivores(String name, int age, String habitat, int speed, String food) {
         super(name, age, habitat, speed);
         this.food = ValidationUtils.validOrDefault(food, "Пища только растительного вида.");
     }
@@ -48,7 +48,7 @@ public class Herbivores extends Mammals{
     @Override
     public String toString() {
         return "Класс: Млекапотиющие. Травоядное животное. Название животного: " + getName() + ". Возраст животного: " + getAge() +
-                " лет. Ареал обитания: " + habitat +
-                ". Скорость перемещения: " + speed + " км/ч. Тип пищи: " + food + ".";
+                " лет. Ареал обитания: " + getHabitat() +
+                ". Скорость перемещения: " + getSpeed() + " км/ч. Тип пищи: " + food + ".";
     }
 }
